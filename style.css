@@ -1,0 +1,126 @@
+body {
+  width: 100vw;
+  background-color: #1d1d1d;
+  margin: 0;
+  font-family: helvetica;
+}
+
+.contenedor {
+  max-width: 1024px;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  position: absolute;
+  top: 0;
+
+}
+@media screen and (max-width: 767px) {
+  .contenedor {
+    padding-top: 300px;
+    flex-direction: column;
+  }
+}
+.carta {
+	position: absolute;
+	top: 20vh;
+	left: 5vw;
+  width: 100%;
+  max-width: 220px;
+  min-width: 100px;
+  height: 45vh;
+  background-color: #292929;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+  border: 2px solid rgba(7, 7, 7, 0.12);
+  font-size: 16px;
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.icono {
+  margin: 0 auto;
+  width: 100%;
+  height: 80px;
+  max-width: 80px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: all 0.8s ease;
+  background-position: 0px;
+  background-size: 200px;
+  font-size: 28px;
+}
+
+.carta .titulo {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.texto {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 13px;
+  text-align: center;
+  margin: 10px;
+  color: white;
+  font-weight: 150;
+  letter-spacing: 2px;
+  opacity: 0;
+  max-height: 0;
+  transition: all 0.3s ease;
+}
+.carta:hover {
+  height: 270px;
+}
+.carta:hover .titulo{
+  height: 90%;
+}
+.carta:hover .texto {
+  transition: all 0.3s ease;
+  opacity: 1;
+  max-height: 40px;
+}
+.carta:hover .icono {
+  background-position: -120px;
+  transition: all 0.3s ease;
+}
+
+.carta:hover img{
+	 position: absolute;
+	top: 3px;
+    transition-duration: 0.2s;
+    transition-delay: 0;
+}
+
+
+.icono img{
+	position: absolute;
+	top: 40px;
+	width: 10vw;
+	height: 15vh;
+	border-radius: 90%;
+      transition:all 0.8s linear 0.2s;
+}
+
+.contenedor-icono{
+	width: 15vw;
+	height: 20vh;
+	border-radius: 90%;
+	background-color: #fff;
+}
+
